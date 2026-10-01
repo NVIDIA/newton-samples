@@ -1,0 +1,11 @@
+/ref
+/.cache
+/.venv
+__pycache__/
+*.py[cod]
+imgui.ini
+/.pytest_cache/
+/.ruff_cache/
+/dist/
+/output.usd
+/test-results/
