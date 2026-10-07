@@ -1,10 +1,11 @@
-# DevTech Newton Examples
+# Newton Samples
 
-[![CPU tests and quality](https://github.com/NVIDIA/devtech-newton-examples/actions/workflows/quality.yml/badge.svg?branch=main&event=push)](https://github.com/NVIDIA/devtech-newton-examples/actions/workflows/quality.yml?query=branch%3Amain+event%3Apush)
-[![GPU tests](https://github.com/NVIDIA/devtech-newton-examples/actions/workflows/tests.yml/badge.svg?branch=main&event=push)](https://github.com/NVIDIA/devtech-newton-examples/actions/workflows/tests.yml?query=branch%3Amain+event%3Apush)
+[![CPU tests and quality](https://github.com/NVIDIA/newton-samples/actions/workflows/quality.yml/badge.svg?branch=main&event=push)](https://github.com/NVIDIA/newton-samples/actions/workflows/quality.yml?query=branch%3Amain+event%3Apush)
+[![GPU tests](https://github.com/NVIDIA/newton-samples/actions/workflows/tests.yml/badge.svg?branch=main&event=push)](https://github.com/NVIDIA/newton-samples/actions/workflows/tests.yml?query=branch%3Amain+event%3Apush)
 
-Newton simulation examples from NVIDIA DevTech. This repository currently contains
-the Franka pulley mechanical advantage example.
+[Newton Samples](https://github.com/NVIDIA/newton-samples) (`newton-samples`)
+contains Newton simulation examples from NVIDIA DevTech. This repository currently
+contains the Franka pulley mechanical advantage example.
 
 ## Setup
 
@@ -12,8 +13,8 @@ Install [uv](https://docs.astral.sh/uv/getting-started/installation/), then clon
 this repository and install the locked dependencies:
 
 ```bash
-git clone https://github.com/NVIDIA/devtech-newton-examples.git
-cd devtech-newton-examples
+git clone https://github.com/NVIDIA/newton-samples.git
+cd newton-samples
 uv sync --locked --python 3.12
 ```
 
@@ -27,7 +28,8 @@ the OpenGL viewer also requires a working graphics display.
 The Franka URDF and meshes are downloaded by `newton.utils.download_asset`
 from Newton's public asset collection on first use, so the first run requires
 internet access. The pulley, cable, and weight are generated in Python; no local
-asset files or Git LFS setup are required.
+asset files or Git LFS setup are required. See [third-party notices](THIRD_PARTY_NOTICES.md)
+for the asset source and the retained license notices.
 
 ## Run
 
@@ -53,7 +55,8 @@ uv run -m examples franka_pulley_mechanical_advantage --mechanical-advantage 6 -
 uv run -m examples franka_pulley_mechanical_advantage --help
 ```
 
-The implementation stays in one file: `add_pulley_mechanism()` builds the
+The [sample implementation](examples/multiphysics/example_franka_pulley_mechanical_advantage.py)
+stays in one file: `add_pulley_mechanism()` builds the
 block and tackle, `gripper_target()` describes the approach/grasp/pull/hold
 trajectory relative to the box, and `Example` connects the solvers and IK.
 Control measurements update on every step, independently of rendering.
@@ -133,4 +136,17 @@ uv build
 ## License
 
 The example code is licensed under [Apache 2.0](LICENSE.md). Dependencies and
-downloaded robot assets retain their respective licenses.
+downloaded robot assets retain their respective licenses. The example runner
+includes code adapted from Newton; its upstream copyright headers are preserved.
+[Third-party notices](THIRD_PARTY_NOTICES.md) document the included code, runtime
+and build dependencies, and downloaded assets.
+
+The Franka asset's Apache-2.0 license and additional Willow Garage BSD notice are
+retained in [licenses/franka_emika_panda-LICENSE.txt](licenses/franka_emika_panda-LICENSE.txt).
+This file covers the runtime asset; the asset files themselves are downloaded
+separately and are not bundled with this project.
+
+## Contributions
+
+This project is currently not accepting contributions.
+See [CONTRIBUTING.md](CONTRIBUTING.md).

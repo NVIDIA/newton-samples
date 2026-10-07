@@ -3,6 +3,9 @@
 #
 # SPDX-FileCopyrightText: Copyright (c) 2025 NVIDIA CORPORATION & AFFILIATES. All rights reserved.
 # SPDX-License-Identifier: Apache-2.0
+#
+# Modified by NVIDIA for local example discovery, selection, and execution.
+# Upstream provenance and license information: ../THIRD_PARTY_NOTICES.md.
 
 import ast
 import copy

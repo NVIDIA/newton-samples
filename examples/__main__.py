@@ -3,6 +3,9 @@
 #
 # SPDX-FileCopyrightText: Copyright (c) 2025 NVIDIA CORPORATION & AFFILIATES. All rights reserved.
 # SPDX-License-Identifier: Apache-2.0
+#
+# Modified by NVIDIA to launch the local examples package.
+# Upstream provenance and license information: ../THIRD_PARTY_NOTICES.md.
 
 """Entry point for running examples via ``python -m examples <example_name>``."""
 

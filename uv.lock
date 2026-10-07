@@ -661,7 +661,7 @@ wheels = [
 ]
 
 [[package]]
-name = "devtech-newton-examples"
+name = "newton-samples"
 version = "1.0.0"
 source = { editable = "." }
 dependencies = [
