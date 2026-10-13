@@ -43,14 +43,14 @@ Choose a sample below for launch instructions, configuration, and validation.
 
 ## Examples
 
-<table>
+<table width="100%">
   <tr>
     <td colspan="3"><h3>Multiphysics</h3></td>
   </tr>
   <tr>
     <td align="center" width="33%">
       <a href="docs/examples/franka_pulley_mechanical_advantage.md">
-        <img width="320" src="docs/images/examples/example_franka_pulley_mechanical_advantage.jpg" alt="Franka robot grasping a cable end beside a block-and-tackle pulley mechanism and guided load">
+        <img width="100%" src="docs/images/examples/example_franka_pulley_mechanical_advantage.jpg" alt="Franka robot grasping a cable end beside a block-and-tackle pulley mechanism and guided load">
       </a>
     </td>
     <td width="33%"></td>
