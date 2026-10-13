@@ -60,7 +60,7 @@ Development-only tools `pytest` and `ruff` are outside this runtime/build invent
 | addict | 2.4.0 | MIT | [Package metadata](https://pypi.org/project/addict/2.4.0/) |
 | alphashape | 1.3.1 | MIT | [Package metadata](https://pypi.org/project/alphashape/1.3.1/) |
 | annotated-types | 0.7.0 | MIT | [Package metadata](https://pypi.org/project/annotated-types/0.7.0/) |
-| anyio | 4.14.1 | MIT | [Package metadata](https://pypi.org/project/anyio/4.14.1/) |
+| anyio | 4.15.1 | MIT | [Package metadata](https://pypi.org/project/anyio/4.15.1/) |
 | blinker | 1.9.0 | MIT | [Package metadata](https://pypi.org/project/blinker/1.9.0/) |
 | cbor2 | 6.1.2 | MIT | [Package metadata](https://pypi.org/project/cbor2/6.1.2/) |
 | click-log | 0.4.0 | MIT | [Package metadata](https://pypi.org/project/click-log/0.4.0/) |
@@ -102,7 +102,7 @@ Development-only tools `pytest` and `ruff` are outside this runtime/build invent
 | markupsafe | 3.0.3 | BSD-3-Clause | [Package metadata](https://pypi.org/project/markupsafe/3.0.3/) |
 | matplotlib | 3.10.9 | PSF-2.0 | [Package metadata](https://pypi.org/project/matplotlib/3.10.9/) |
 | matplotlib | 3.11.0 | MATPLOTLIB License 1.3.0 or Later | [Package metadata](https://pypi.org/project/matplotlib/3.11.0/) |
-| mcp | 1.28.0 | MIT | [Package metadata](https://pypi.org/project/mcp/1.28.0/) |
+| mcp | 1.30.0 | MIT | [Package metadata](https://pypi.org/project/mcp/1.30.0/) |
 | mdurl | 0.1.2 | MIT | [Package metadata](https://pypi.org/project/mdurl/0.1.2/) |
 | meshio | 5.3.5 | MIT | [Package metadata](https://pypi.org/project/meshio/5.3.5/) |
 | ml-dtypes | 0.5.4 | Apache-2.0 | [Package metadata](https://pypi.org/project/ml-dtypes/0.5.4/) |
@@ -123,22 +123,22 @@ Development-only tools `pytest` and `ruff` are outside this runtime/build invent
 | packaging | 26.2 | Apache-2.0, BSD-2-Clause | [Package metadata](https://pypi.org/project/packaging/26.2/) |
 | pandas | 2.3.3 | BSD-3-Clause | [Package metadata](https://pypi.org/project/pandas/2.3.3/) |
 | pandas | 3.0.3 | BSD-3-Clause | [Package metadata](https://pypi.org/project/pandas/3.0.3/) |
-| pillow | 12.2.0 | HPND | [Package metadata](https://pypi.org/project/pillow/12.2.0/) |
+| pillow | 12.3.0 | MIT-CMU | [Package metadata](https://pypi.org/project/pillow/12.3.0/) |
 | platformdirs | 4.10.0 | Expat License | [Package metadata](https://pypi.org/project/platformdirs/4.10.0/) |
 | plotly | 6.8.0 | MIT | [Package metadata](https://pypi.org/project/plotly/6.8.0/) |
 | requests | 2.34.2 | Apache-2.0 | [Package metadata](https://pypi.org/project/requests/2.34.2/) |
-| cryptography | 49.0.0 | BSD-3-Clause, Apache-2.0 | [Package metadata](https://pypi.org/project/cryptography/49.0.0/) |
+| cryptography | 50.0.2 | Apache-2.0 OR BSD-3-Clause | [Package metadata](https://pypi.org/project/cryptography/50.0.2/) |
 | pycollada | 0.9.3 | BSD-3-Clause | [Package metadata](https://pypi.org/project/pycollada/0.9.3/) |
 | pycparser | 3.0 | BSD-3-Clause | [Package metadata](https://pypi.org/project/pycparser/3.0/) |
 | pydantic | 2.13.4 | MIT | [Package metadata](https://pypi.org/project/pydantic/2.13.4/) |
 | pydantic-core | 2.46.4 | MIT | [Package metadata](https://pypi.org/project/pydantic-core/2.46.4/) |
-| pydantic-settings | 2.14.2 | MIT | [Package metadata](https://pypi.org/project/pydantic-settings/2.14.2/) |
+| pydantic-settings | 2.15.0 | MIT | [Package metadata](https://pypi.org/project/pydantic-settings/2.15.0/) |
 | pyglet | 2.1.14 | BSD-3-Clause | [Package metadata](https://pypi.org/project/pyglet/2.1.14/) |
 | pygments | 2.20.0 | BSD-2-Clause | [Package metadata](https://pypi.org/project/pygments/2.20.0/) |
-| pyjwt | 2.13.0 | MIT | [Package metadata](https://pypi.org/project/pyjwt/2.13.0/) |
+| pyjwt | 2.15.1 | MIT | [Package metadata](https://pypi.org/project/pyjwt/2.15.1/) |
 | pyopengl | 3.1.10 | BSD-3-Clause | [Package metadata](https://pypi.org/project/pyopengl/3.1.10/) |
 | pyparsing | 3.3.2 | MIT | [Package metadata](https://pypi.org/project/pyparsing/3.3.2/) |
-| setuptools | 81.0.0 | MIT | [Package metadata](https://pypi.org/project/setuptools/81.0.0/) |
+| setuptools | 84.0.0 | MIT | [Package metadata](https://pypi.org/project/setuptools/84.0.0/) |
 | pyquaternion | 0.9.9 | MIT | [Package metadata](https://pypi.org/project/pyquaternion/0.9.9/) |
 | charset-normalizer | 3.4.7 | MIT | [Package metadata](https://pypi.org/project/charset-normalizer/3.4.7/) |
 | importlib-resources | 7.1.0 | Apache-2.0 | [Package metadata](https://pypi.org/project/importlib-resources/7.1.0/) |
@@ -146,12 +146,13 @@ Development-only tools `pytest` and `ruff` are outside this runtime/build invent
 | certifi | 2026.6.17 | MPL-2.0 | [Package metadata](https://pypi.org/project/certifi/2026.6.17/) |
 | cffi | 2.0.0 | MIT | [Package metadata](https://pypi.org/project/cffi/2.0.0/) |
 | python-dateutil | 2.9.0.post0 | BSD-3-Clause, Apache-2.0 | [Package metadata](https://pypi.org/project/python-dateutil/2.9.0.post0/) |
-| python-dotenv | 1.2.2 | BSD-3-Clause | [Package metadata](https://pypi.org/project/python-dotenv/1.2.2/) |
+| python-dotenv | 1.2.4 | BSD-3-Clause | [Package metadata](https://pypi.org/project/python-dotenv/1.2.4/) |
 | jsonschema | 4.26.0 | MIT | [Package metadata](https://pypi.org/project/jsonschema/4.26.0/) |
 | python-multipart | 0.0.32 | Apache-2.0 | [Package metadata](https://pypi.org/project/python-multipart/0.0.32/) |
-| protobuf | 7.35.1 | BSD-3-Clause | [Package metadata](https://pypi.org/project/protobuf/7.35.1/) |
+| protobuf | 7.36.2 | BSD-3-Clause | [Package metadata](https://pypi.org/project/protobuf/7.36.2/) |
 | six | 1.17.0 | MIT | [Package metadata](https://pypi.org/project/six/1.17.0/) |
 | typing-extensions | 4.15.0 | PSF-2.0 | [Package metadata](https://pypi.org/project/typing-extensions/4.15.0/) |
+| typing-extensions | 4.16.0 | PSF-2.0 | [Package metadata](https://pypi.org/project/typing-extensions/4.16.0/) |
 | tzdata | 2026.2 | Apache-2.0 | [Package metadata](https://pypi.org/project/tzdata/2026.2/) |
 | pytz | 2026.2 | MIT | [Package metadata](https://pypi.org/project/pytz/2026.2/) |
 | pywin32 | 312 | PSF-2.0 | [Package metadata](https://pypi.org/project/pywin32/312/) |
@@ -177,12 +178,12 @@ Development-only tools `pytest` and `ruff` are outside this runtime/build invent
 | traitlets | 5.15.1 | BSD-3-Clause | [Package metadata](https://pypi.org/project/traitlets/5.15.1/) |
 | trimesh | 4.12.2 | MIT | [Package metadata](https://pypi.org/project/trimesh/4.12.2/) |
 | typing-inspection | 0.4.2 | MIT | [Package metadata](https://pypi.org/project/typing-inspection/0.4.2/) |
-| urllib3 | 2.7.0 | MIT | [Package metadata](https://pypi.org/project/urllib3/2.7.0/) |
+| urllib3 | 2.8.0 | MIT | [Package metadata](https://pypi.org/project/urllib3/2.8.0/) |
 | usd-core | 26.3 | Modified Apache 2.0 License Version 2.0.1 | [Package metadata](https://pypi.org/project/usd-core/26.3/) |
 | usd-exchange | 2.3.0 | Apache-2.0 | [Package metadata](https://pypi.org/project/usd-exchange/2.3.0/) |
 | warp-lang | 1.17.0 | Apache-2.0 | [Package metadata](https://pypi.org/project/warp-lang/1.17.0/) |
 | warp-nn | 0.3.1 | Apache-2.0 | [Package metadata](https://pypi.org/project/warp-nn/0.3.1/) |
-| werkzeug | 3.1.8 | BSD-3-Clause | [Package metadata](https://pypi.org/project/werkzeug/3.1.8/) |
+| werkzeug | 3.1.9 | BSD-3-Clause | [Package metadata](https://pypi.org/project/werkzeug/3.1.9/) |
 | zipp | 4.1.0 | MIT | [Package metadata](https://pypi.org/project/zipp/4.1.0/) |
 | uv-build | >=0.11.0 | MIT OR Apache-2.0 | [Package metadata](https://pypi.org/project/uv-build/) |
 | franka_emika_panda (FR3 URDF and meshes) | f8fb7abcbeba2318814a74f3eeb02780ad7925d6 | Apache-2.0; additional Willow Garage BSD notice | [Asset license](https://github.com/newton-physics/newton-assets/blob/f8fb7abcbeba2318814a74f3eeb02780ad7925d6/franka_emika_panda/LICENSE) |

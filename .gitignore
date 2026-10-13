@@ -9,3 +9,5 @@ imgui.ini
 /dist/
 /output.usd
 /test-results/
+/.osv-*.json
+/pyproject.toml.proposed

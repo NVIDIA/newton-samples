@@ -27,8 +27,8 @@ the OpenGL viewer also requires a working graphics display.
 
 The Franka URDF and meshes are downloaded by `newton.utils.download_asset`
 from Newton's public asset collection on first use, so the first run requires
-internet access. The pulley, cable, and weight are generated in Python; no local
-asset files or Git LFS setup are required. See [third-party notices](THIRD_PARTY_NOTICES.md)
+internet access and Git on `PATH`. The pulley, cable, and weight are generated in
+Python; no local asset files or Git LFS setup are required. See [third-party notices](THIRD_PARTY_NOTICES.md)
 for the asset source and the retained license notices.
 
 ## Run
@@ -127,7 +127,8 @@ than silently skipping the simulations.
 
 ## Build
 
-The project uses the `uv_build` backend and packages the `examples` module:
+The project uses the `uv_build` backend and packages the `examples` module.
+Use uv 0.12.2 or newer for builds, matching the version used by CI:
 
 ```bash
 uv build

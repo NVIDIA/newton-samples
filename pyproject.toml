@@ -52,3 +52,17 @@ indent-width = 4
 
 [tool.ruff.lint]
 extend-select = ["I"]
+
+[tool.uv]
+# Minimum patched versions for transitive dependencies reported by nSpect and OSV.
+constraint-dependencies = [
+    "anyio>=4.15.1",
+    "cryptography>=50.0.2",
+    "mcp>=1.30.0,<2",
+    "pillow>=12.3.0",
+    "protobuf>=7.36.2",
+    "pyjwt>=2.15.1",
+    "setuptools>=84.0.0",
+    "urllib3>=2.8.0",
+    "werkzeug>=3.1.9",
+]
