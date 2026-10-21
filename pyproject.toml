@@ -9,7 +9,7 @@ description = "Newton simulation examples from NVIDIA DevTech"
 readme = "README.md"
 requires-python = ">=3.10"
 license = "Apache-2.0"
-license-files = ["LICENSE.md", "THIRD_PARTY_NOTICES.md", "licenses/*"]
+license-files = ["LICENSE.md", "THIRD_PARTY_NOTICES.md"]
 dependencies = [
     "newton[examples]>=1.6.0",
 ]
