@@ -1,9 +1,9 @@
 # Newton Samples
 
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-[![CPU tests and quality](https://github.com/NVIDIA/newton-samples/actions/workflows/quality.yml/badge.svg?branch=main&event=push)](https://github.com/NVIDIA/newton-samples/actions/workflows/quality.yml?query=branch%3Amain+event%3Apush)
-[![GPU tests](https://github.com/NVIDIA/newton-samples/actions/workflows/tests.yml/badge.svg?branch=main&event=push)](https://github.com/NVIDIA/newton-samples/actions/workflows/tests.yml?query=branch%3Amain+event%3Apush)
-[![GPU tests with Newton main](https://github.com/NVIDIA/newton-samples/actions/workflows/newton-main.yml/badge.svg?branch=main&event=schedule)](https://github.com/NVIDIA/newton-samples/actions/workflows/newton-main.yml?query=branch%3Amain+event%3Aschedule)
+[![CPU tests and quality](https://github.com/NVIDIA/newton-samples/actions/workflows/quality.yml/badge.svg?branch=main)](https://github.com/NVIDIA/newton-samples/actions/workflows/quality.yml?query=branch%3Amain)
+[![GPU tests](https://github.com/NVIDIA/newton-samples/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/NVIDIA/newton-samples/actions/workflows/tests.yml?query=branch%3Amain)
+[![GPU tests with Newton main](https://github.com/NVIDIA/newton-samples/actions/workflows/newton-main.yml/badge.svg?branch=main)](https://github.com/NVIDIA/newton-samples/actions/workflows/newton-main.yml?query=branch%3Amain)
 
 Newton Samples is a collection of complex physics simulation samples from
 the NVIDIA Developer Technology team built with [Newton](https://github.com/newton-physics/newton), the
