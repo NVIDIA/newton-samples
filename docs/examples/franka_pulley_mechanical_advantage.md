@@ -63,7 +63,7 @@ advantage is the intended load's weight divided by the measured pulling force;
 it is a diagnostic estimate affected by friction, guide damping, and coupling.
 
 The sample uses Newton's experimental coupled-solver APIs. The cable uses
-Newton 1.6's `Rod` API with zero bend/twist stiffness, and the VBD solver uses
+Newton's `Rod` API with zero bend/twist stiffness, and the VBD solver uses
 compliant ALM. Collision detection runs every substep. CUDA graph capture is
 always enabled on CUDA devices; other solver tuning is kept in `_build_solver()`.
 

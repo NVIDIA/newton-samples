@@ -7,11 +7,11 @@ name = "newton-samples"
 version = "1.0.0"
 description = "Newton simulation examples from NVIDIA DevTech"
 readme = "README.md"
-requires-python = ">=3.10"
+requires-python = ">=3.11"
 license = "Apache-2.0"
 license-files = ["LICENSE.md", "THIRD_PARTY_NOTICES.md"]
 dependencies = [
-    "newton[examples]>=1.6.0",
+    "newton[examples]>=1.7.0",
 ]
 
 [project.urls]
@@ -57,9 +57,10 @@ extend-select = ["I"]
 # Minimum patched versions for transitive dependencies reported by nSpect and OSV.
 constraint-dependencies = [
     "anyio>=4.15.1",
+    "certifi>=2026.10.19",
     "cryptography>=50.0.2",
     "mcp>=1.30.0,<2",
-    "pillow>=12.3.0",
+    "pillow>=13.0.0",
     "protobuf>=7.36.2",
     "pyjwt>=2.15.1",
     "setuptools>=84.0.0",

@@ -19,13 +19,13 @@ For the engine's API and user guides, see the
 
 ## Requirements
 
-- Python 3.10 or newer; Python 3.12 is recommended for the locked environment.
+- Python 3.11 or newer; Python 3.12 is recommended for the locked environment.
 - [uv](https://docs.astral.sh/uv/getting-started/installation/) for environment setup.
 - An NVIDIA GPU with a compatible driver is recommended for CUDA acceleration.
 - A working graphics display for the interactive OpenGL viewer.
 - Internet access and Git on `PATH` to download robot assets on first use.
 
-The project depends on `newton[examples]>=1.6.0`. The included lockfile pins the
+The project depends on `newton[examples]>=1.7.0`. The included lockfile pins the
 tested versions of Newton, Warp, MuJoCo, MuJoCo Warp, and the viewer dependencies.
 See Newton's [installation guide](https://newton-physics.github.io/newton/stable/guide/installation.html)
 for detailed platform, GPU, and driver requirements.

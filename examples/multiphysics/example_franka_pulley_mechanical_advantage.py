@@ -736,6 +736,7 @@ class Example:
                 wp.quat_from_axis_angle(wp.vec3(0.0, 0.0, 1.0), math.pi),
             ),
             floating=False,
+            joint_damping_mode="drive",
             enable_self_collisions=False,
             parse_visuals_as_colliders=False,
             force_show_colliders=False,
