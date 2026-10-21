@@ -20,6 +20,8 @@ jobs:
     name: Newton main / RTX PRO 6000
     runs-on: linux-amd64-gpu-rtxpro6000-latest-1
     timeout-minutes: 30
+    env:
+      WARP_CACHE_PATH: ${{ github.workspace }}/.cache/warp
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
@@ -37,12 +39,14 @@ jobs:
         run: uv add --no-sync --upgrade-package newton "newton[examples] @ git+https://github.com/newton-physics/newton.git@main"
       - name: Install resolved dependencies
         run: uv sync --locked --dev
+      - name: Cache compiled Warp kernels
+        uses: ./.github/actions/cache-warp
       - name: Record installed dependencies
         run: |
           mkdir -p test-results
           uv pip freeze | tee test-results/environment.txt
       - name: Run full suite with CUDA required
-        run: uv run --locked pytest --require-cuda --junitxml=test-results/cuda.xml
+        run: uv run --locked pytest --require-cuda --durations=10 --junitxml=test-results/cuda.xml
       - name: Upload test results and resolved dependencies
         if: always()
         uses: actions/upload-artifact@bbbca2ddaa5d8feaa63e36b76fdaad77386f024f # v7.0.0

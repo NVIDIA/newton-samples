@@ -1,0 +1,33 @@
+# SPDX-FileCopyrightText: Copyright (c) 2026 The Newton Developers
+# SPDX-License-Identifier: Apache-2.0
+
+name: Cache Warp kernels
+description: Reuse compiled kernels across compatible GPU test runs.
+
+runs:
+  using: composite
+  steps:
+    - name: Identify Warp runtime and GPU architecture
+      id: runtime
+      shell: bash
+      run: |
+        uv run --locked python - <<'PY'
+        import os
+        import sys
+        import warp as wp
+
+        wp.config.log_level = wp.LOG_WARNING
+        device = wp.get_device("cuda:0")
+        python = f"{sys.version_info.major}.{sys.version_info.minor}"
+        with open(os.environ["GITHUB_OUTPUT"], "a") as output:
+            print(f"identity=py{python}-warp{wp.__version__}-sm{device.arch}", file=output)
+        PY
+    - name: Restore compiled kernels
+      uses: actions/cache@caa296126883cff596d87d8935842f9db880ef25 # v5
+      with:
+        path: ${{ env.WARP_CACHE_PATH }}
+        key: warp-v1-${{ runner.os }}-${{ runner.arch }}-${{ steps.runtime.outputs.identity }}-${{ hashFiles('pyproject.toml', 'uv.lock', 'examples/**/*.py', 'tests/**/*.py') }}
+        # Warp hashes module contents, so unchanged kernels remain reusable
+        # when Newton or the examples change. New kernels compile normally.
+        restore-keys: |
+          warp-v1-${{ runner.os }}-${{ runner.arch }}-${{ steps.runtime.outputs.identity }}-
