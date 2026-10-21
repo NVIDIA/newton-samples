@@ -3,10 +3,10 @@
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![CPU tests and quality](https://github.com/NVIDIA/newton-samples/actions/workflows/quality.yml/badge.svg?branch=main&event=push)](https://github.com/NVIDIA/newton-samples/actions/workflows/quality.yml?query=branch%3Amain+event%3Apush)
 [![GPU tests](https://github.com/NVIDIA/newton-samples/actions/workflows/tests.yml/badge.svg?branch=main&event=push)](https://github.com/NVIDIA/newton-samples/actions/workflows/tests.yml?query=branch%3Amain+event%3Apush)
-[![Nightly GPU tests against Newton main](https://github.com/NVIDIA/newton-samples/actions/workflows/newton-main.yml/badge.svg?branch=main&event=schedule)](https://github.com/NVIDIA/newton-samples/actions/workflows/newton-main.yml?query=branch%3Amain+event%3Aschedule)
+[![GPU tests with Newton main](https://github.com/NVIDIA/newton-samples/actions/workflows/newton-main.yml/badge.svg?branch=main&event=schedule)](https://github.com/NVIDIA/newton-samples/actions/workflows/newton-main.yml?query=branch%3Amain+event%3Aschedule)
 
-Newton Samples is a collection of more complex physics simulation samples from
-NVIDIA DevTech built with [Newton](https://github.com/newton-physics/newton), the
+Newton Samples is a collection of complex physics simulation samples from
+the NVIDIA Developer Technology team built with [Newton](https://github.com/newton-physics/newton), the
 GPU-accelerated physics simulation engine built on
 [NVIDIA Warp](https://github.com/NVIDIA/warp). The samples demonstrate how to
 combine Newton's solvers, robotics tools, and multiphysics coupling in complete
@@ -65,17 +65,6 @@ Choose a sample below for launch instructions, configuration, and validation.
     <td width="33%"></td>
   </tr>
 </table>
-
-## Continuous integration
-
-The GPU test suite also runs nightly at 02:17 UTC against the latest commit on
-[Newton's `main` branch](https://github.com/newton-physics/newton/tree/main), using
-the RTX PRO 6000 runners. The
-[nightly workflow](https://github.com/NVIDIA/newton-samples/actions/workflows/newton-main.yml)
-can also be started manually with **Run workflow**. It requires CUDA and runs the
-full test suite, so a missing GPU fails the job instead of skipping GPU tests.
-Each run uploads the JUnit results, installed dependency versions, and resolved
-lockfile as the `tests-newton-main-cuda` artifact, retained for 14 days.
 
 ## Contributing
 
