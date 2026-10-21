@@ -150,9 +150,13 @@ def test_mechanical_advantage(cuda_device, advantage):
     assert example.solver.solver("vbd").iterations == 10
     # FK must not rotate the anchored segment away from the authored route.
     cable_bodies = example.mechanism.cable_bodies
-    np.testing.assert_allclose(
-        example.state_0.body_q.numpy()[cable_bodies], example.model.body_q.numpy()[cable_bodies], atol=1.0e-6
-    )
+    initial_cable_q = example.state_0.body_q.numpy()[cable_bodies]
+    authored_cable_q = example.model.body_q.numpy()[cable_bodies]
+    np.testing.assert_allclose(initial_cable_q[0], authored_cable_q[0], rtol=0.0, atol=1.0e-6)
+    # Newton now evaluates FK through rod joints instead of leaving their
+    # authored poses unchanged. Float32 roundoff over the 194-body 6:1 cable
+    # accumulates to about 14 micrometres; allow 20 micrometres along the chain.
+    np.testing.assert_allclose(initial_cable_q, authored_cable_q, rtol=0.0, atol=2.0e-5)
     max_grasp_error = 0.0
     hold_heights = []
     pull_origin = None
